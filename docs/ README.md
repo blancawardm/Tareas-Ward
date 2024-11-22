@@ -10,7 +10,7 @@ Cuando este ya estaba creado, lo dividi en dos partes:  < head> y < body>.
 Después de eso, escribí un enlace para que se vincule con el archivo estilo.css. Este último contiene los atributos que determinan el estilo de las letras, colores y disposición de los párrafos que tendrá el HTML.
 
 **Elección de distribución de Información**:
-La columna izquierda contiene mi foto, datos personales de contacto como mi telefono y mail de la universidad. Mientras que el lado derecho tiene mi educación y experiencias. 
+La columna izquierda contiene mi foto, datos personales de contacto como mi telefono y mail de la universidad. Con mis habilidades e intereses. Mientras que el lado derecho tiene mi educación y experiencias. 
 
 Para hacer ambas secciones, con ayuda de mi compañera María José Jiménez utilicé una plantilla de [Codepen](https://codepen.io/search/pens?q=resume%20cv), para la distribución de la información, para que así no sea todo de manera vertical 
 
