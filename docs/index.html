@@ -2,57 +2,127 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Blanca Ward">
-    <meta name="description" content="Currículum vitae digital de Blanca Ward">
-    <title>Currículum - Blanca Ward</title>
+    <title>Curriculum Vitae de Blanca Ward</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <h1>Blanca Ward</h1>
-    </header>
+    <div class="cv">
+        <!-- Columna Izquierda -->
+        <div class="cv_left">
+            <header>
+                <div>
+                    <img src="blanca.jpg" alt="Foto de Blanca Ward" width="150">
+                </div>
+                <div class="cv_content">
+                    <!-- Información Personal -->
+                    <div class="cv_item">
+                        <div class="title">
+                            <h1>Blanca Ward</h1>
+                            <p>Estudiante de Periodismo</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="data">Chile</div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                                <div class="data">+56 9 12345678</div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                <div class="data">blanca.ward@example.com</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Habilidades -->
+                    <div class="cv_item">
+                        <div class="title">
+                            <p><b>Habilidades</b></p>
+                        </div>
+                        <ul>
+                            <li>Creativa</li>
+                            <li>Organizada</li>
+                            <li>Ordenada</li>
+                        </ul>
+                    </div>
 
-    <main>
-        <section id="informacion-personal">
-            <h2>Información Personal</h2>
-            <p id="grande" class="color-verde">Esto debe ser color verde</p>
-            <img src="blanca.jpg" alt="Foto de Blanca Ward" width="200">
-            <ul>
-                <li>Chilena</li>
-                <li>21 años</li>
-                <li>
-                    <a href="https://colegiolosalerces.cl/">Educación básica y media - Colegio Los Alerces</a>
-                </li>
-                <li>
-                    <a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">
-                        Tercer año de Periodismo - Pontificia Universidad Católica de Chile
-                    </a>
-                </li>
-                <li>Tres semestres como ayudante en Test de Actualidad</li>
-            </ul>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Creativa</li>
-                <li>Organizada</li>
-                <li>Ordenada</li>
-            </ul>
-        </section>
-
-        <section id="experiencia">
-            <h2>Experiencia</h2>
-            <ul>
-                <li>Clases particulares de lenguaje</li>
-                <li>Participación en Fundación Trabún</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Blanca Ward | <a href="mailto:blanca.ward@uc.cl">blanca.ward@uc.cl</a></p>
-    </footer>
+                    <!-- Intereses -->
+                    <div class="cv_item">
+                        <div class="title">
+                            <p><b>Intereses</b></p>
+                        </div>
+                        <ul>
+                            <li>Educación inclusiva</li>
+                            <li>Periodismo cultural</li>
+                            <li>Voluntariado</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="cv_right">
+            <div class="cv_item">
+                <div class="title">
+                    <p class="bold">Perfil</p>
+                </div>
+                <ul> 
+                    <li>Persona proactiva, organizada y responsable.</li>
+                    <li>Interesada en la comunicación, la inclusión y la educación.</li>
+                </ul>    
+            </div>
+            <!-- Estudios -->
+            <div class="cv_item">
+                <div class="title">
+                    <p class="bold">Educación</p>
+                </div>
+                <ul>
+                    <li>
+                        <p class="semi-bold"><a href="https://comunicaciones.uc.cl/programas-academicos/pregrado/periodismo/">Pontificia Universidad Católica de Chile</a></p>
+                        <p>Estudiante de tercer año de Periodismo</p> 
+                        <div class="date">2021 - Presente | Santiago, Chile</div>
+                    </li>
+                    <li>
+                        <p class="semi-bold"><a href="https://colegiolosalerces.cl/">Colegio Los Alerces</a></p>
+                        <p>Enseñanza Básica y Media</p>
+                        <div class="date">2005 - 2020 | Santiago, Chile</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Experiencia -->
+            <div class="cv_item">
+                <div class="title">
+                    <p class="bold">Experiencia</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="date">
+                            <p>Clases particulares de lenguaje</p>
+                            <p><b>2021 - Presente</b></p>
+                            <div class="info">Impartiendo clases de refuerzo en lenguaje y comprensión lectora para estudiantes de básica.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <p>Fundación Trabún</p>
+                            <p><b>2020 - 2022</b></p>
+                            <div class="info">Participación activa en proyectos de educación inclusiva y actividades comunitarias.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">
+                            <p>Ayudante en Test de Actualidad</p>
+                            <p><b>2022 - Presente</b></p>
+                            <div class="info">Apoyo en el desarrollo de materiales para estudiantes en la Universidad Católica.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer> Blanca Ward CV 2024 | <a href="https://www.linkedin.com/">blanca.ward@uc.cl</a></footer>
 </body>
 </html>
