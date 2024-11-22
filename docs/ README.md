@@ -30,3 +30,5 @@ Agregué mi nombre, el año y mi correo personal
 
 En cuanto al **estilo.CSS**, utilicé la tipografía 'Times New Roman'y colores con tonos azules 
 
+^
+[link a mi cv]https://blancawardm.github.io/Tareas-Ward/
