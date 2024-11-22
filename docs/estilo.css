@@ -15,7 +15,7 @@ body {
 }
 
 .cv_left {
-    background: hsl(209, 26%, 45%); 
+    background: rgb(85, 116, 145); 
     color: #ecf0f1; 
     width: 30%;
     padding: 20px;
@@ -65,7 +65,7 @@ ul li {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: hwb(209 55% 5%); 
+    background: rgb(85, 116, 145); 
     color: #ecf0f1; 
     margin-top: 20px;
 }
