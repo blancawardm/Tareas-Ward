@@ -7,7 +7,7 @@ Para realizar esta tarea, tuve más complicaciones ya que no me dejaba subir los
 Lo primero que hice fue escribir la estructura básica de HTML
 Cuando este ya estaba creado, lo dividi en dos partes:  < head> y < body>.
 
-Después de eso, escribí dos enlaces uno para que se pudieran visualizar los íconos de los datos personales y el otro para que se vincule con el archivo estilo.css. Este último contiene los atributos que determinan el estilo de las letras, colores y disposición de los párrafos que tendrá el HTML.
+Después de eso, escribí un enlace para que se vincule con el archivo estilo.css. Este último contiene los atributos que determinan el estilo de las letras, colores y disposición de los párrafos que tendrá el HTML.
 
 **Elección de distribución de Información**:
 La columna izquierda contiene mi foto, datos personales de contacto como mi telefono y mail de la universidad. Mientras que el lado derecho tiene mi educación y experiencias. 
