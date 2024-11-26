@@ -1,36 +1,61 @@
-import plotly.express as px
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="navbar">
+            <h1 class="brand-name">Ocean Guard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Inicio</a></li>
+                    <li><a href="#visualizaciones">Visualizaciones</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-df = pd.read_csv('residuos_plasticos.csv')
-fig = px.choropleth(df, 
-                    locations="Region", 
-                    locationmode="country names",
-                    color="Residuos_despues",
-                    hover_name="Region", 
-                    title="Reducción de residuos plásticos por región")
-fig.show()
+    <!-- Sección de Introducción -->
+    <section id="intro" class="intro">
+        <div class="content">
+            <h2>Protegiendo nuestros océanos del plástico</h2>
+            <p>Un vistazo interactivo a la reducción de plásticos en Chile y su impacto en el medio ambiente.</p>
+        </div>
+    </section>
 
-fig = px.bar(df, 
-             x='Region', 
-             y=['Residuos_antes', 'Residuos_despues'],
-             title="Comparación de residuos plásticos antes y después de medidas",
-             labels={"value": "Residuos plásticos (toneladas)", "Region": "Región"})
-fig.update_layout(barmode='group')
-fig.show()
-fig = px.line(df, 
-              x="Año", 
-              y="Residuos_despues", 
-              color="Region",
-              title="Evolución de residuos plásticos en los océanos",
-              labels={"Residuos_despues": "Residuos plásticos (toneladas)", "Año": "Año"})
-fig.show()
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt
+    <!-- Sección de Visualizaciones Interactivas -->
+    <section id="visualizaciones" class="visualizaciones">
+        <div class="content">
+            <h2>Gráficos Interactivos</h2>
+            <p>A continuación, puedes explorar cómo ha evolucionado la reducción de plásticos en diferentes regiones de Chile.</p>
+            
+            <!-- Gráfico de Flourish Integrado -->
+            <div class="flourish-embed">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <div class="flourish-embed" data-src="https://public.flourish.studio/visualisation/ID-DE-TU-GRÁFICO"></div>
+            </div>
+        </div>
+    </section>
 
-text = "Ley Bolsas Plásticas Limpieza Costera Prohibición Reciclaje Educación Ambiental"
-wordcloud = WordCloud(background_color="white").generate(text)
+    <!-- Sección Acerca de -->
+    <section id="about" class="about">
+        <div class="content">
+            <h2>Sobre Ocean Guard</h2>
+            <p>Ocean Guard es una iniciativa para crear conciencia sobre la contaminación por plásticos en los océanos y la necesidad urgente de reducir su uso. Esta página se enfoca en los esfuerzos realizados en Chile y el impacto en las distintas regiones.</p>
+        </div>
+    </section>
 
-plt.figure(figsize=(10, 5))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.show()
-
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ocean Guard. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
