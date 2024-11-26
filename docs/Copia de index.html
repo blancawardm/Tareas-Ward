@@ -1,0 +1,36 @@
+import plotly.express as px
+
+df = pd.read_csv('residuos_plasticos.csv')
+fig = px.choropleth(df, 
+                    locations="Region", 
+                    locationmode="country names",
+                    color="Residuos_despues",
+                    hover_name="Region", 
+                    title="Reducción de residuos plásticos por región")
+fig.show()
+
+fig = px.bar(df, 
+             x='Region', 
+             y=['Residuos_antes', 'Residuos_despues'],
+             title="Comparación de residuos plásticos antes y después de medidas",
+             labels={"value": "Residuos plásticos (toneladas)", "Region": "Región"})
+fig.update_layout(barmode='group')
+fig.show()
+fig = px.line(df, 
+              x="Año", 
+              y="Residuos_despues", 
+              color="Region",
+              title="Evolución de residuos plásticos en los océanos",
+              labels={"Residuos_despues": "Residuos plásticos (toneladas)", "Año": "Año"})
+fig.show()
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+text = "Ley Bolsas Plásticas Limpieza Costera Prohibición Reciclaje Educación Ambiental"
+wordcloud = WordCloud(background_color="white").generate(text)
+
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
